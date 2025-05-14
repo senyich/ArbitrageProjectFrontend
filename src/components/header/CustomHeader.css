@@ -1,0 +1,36 @@
+.header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  color: #e94560;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-link-list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-link-list a:hover {
+  color: #e94560;
+}
