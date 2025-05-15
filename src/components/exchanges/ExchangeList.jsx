@@ -14,7 +14,7 @@ export default function ExchangeList(){
     ];
     return (
     <section className="exchange-section">
-      <h2 className="exchange-title">Топ криптобирж</h2>
+      <h2 className="exchange-title">Список бирж</h2>
       <div className="exchange-grid">
         {exchanges.map((exchange, index) => (
           <a
@@ -27,7 +27,7 @@ export default function ExchangeList(){
             <span className="exchange-number">{index + 1}.</span>
             <span className="exchange-name">{exchange.name}</span>
             <svg className="exchange-icon" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+            <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
         ))}

@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import './About.css';
-import ExchangeList from '../../exchanges/ExcnahgeList';
+import ExchangeList from '../exchanges/ExchangeList';
+import PriceList from '../pricelist/PriceList';
 
 export default function About() {
   useEffect(() => {
@@ -35,10 +36,14 @@ export default function About() {
         <p>Софт подойдет всем, кто хочет начать зарабатывать на арбитраже криптовалют. Он будет неотъемлемым инструментом как для бывалых трейдеров, так и для начинающих арбитражников.</p>
       </section>
       <section className="about-section">
-        <h2>Список бирж</h2>
-        <ul>
+        <h2>Список бирж, с которыми работает софт</h2>
+        <div>
           <ExchangeList/>
-        </ul>
+        </div>
+      </section>
+      <section className="about-section">
+        <h2>Наши тарифы</h2>
+        <PriceList/>
       </section>
     </div>
   )

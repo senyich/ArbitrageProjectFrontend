@@ -5,11 +5,11 @@ export default function CustomHeader() {
     <header className="header">
       <nav className="nav-container">
         <div className="logo">
-          <Link to="/">CryptoArbitrage</Link>
+          <Link to="/">Arbi</Link>
         </div>
         <ul className="nav-link-list">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/account">Account</Link></li>
+          <li><Link to="/">Главная</Link></li>
+          <li><Link to="/account">Личный кабинет</Link></li>
         </ul>
       </nav>
     </header>
