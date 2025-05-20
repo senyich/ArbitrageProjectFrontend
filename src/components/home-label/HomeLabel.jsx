@@ -1,4 +1,5 @@
 import LinkedButton from "../linked-button/LinkedButton"
+import React from "react"
 import "./HomeLabel.css"
 export default function HomeLabel() {
   return (

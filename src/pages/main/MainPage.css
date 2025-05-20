@@ -1,0 +1,17 @@
+body {
+  background-color: #0e1c16;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 50px;
+  }
+}

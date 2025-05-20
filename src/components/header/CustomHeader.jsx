@@ -1,4 +1,6 @@
+import React from "react"
 import { Link } from "react-router-dom"
+import LinkedButton from "../linked-button/LinkedButton"
 import "./CustomHeader.css"
 export default function CustomHeader() {
   return (
@@ -8,8 +10,8 @@ export default function CustomHeader() {
           <Link to="/">Arbi</Link>
         </div>
         <ul className="nav-link-list">
-          <li><Link to="/">Главная</Link></li>
-          <li><Link to="/account">Личный кабинет</Link></li>
+          <li><LinkedButton content={"Главная"} path="/"/></li>
+          <li><LinkedButton content={"Личный кабинет"} path="/account"/></li>
         </ul>
       </nav>
     </header>

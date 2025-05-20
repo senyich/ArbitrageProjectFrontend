@@ -1,4 +1,6 @@
 import "./ExchangeList.css"
+import React from "react"
+
 export default function ExchangeList(){
     const exchanges = [
     { name: 'Binance', url: 'https://www.binance.com' },

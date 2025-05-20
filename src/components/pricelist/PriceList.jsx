@@ -1,4 +1,6 @@
 import "./PriceList.css"
+import LinkedButton from "../linked-button/LinkedButton";
+import React from "react"
 export default function PriceList(){
     return (
     <div className="pricing-grid">
@@ -12,7 +14,7 @@ export default function PriceList(){
           <li>✓ 10 CEX бирж</li>
           <li>✓ Лимит 15 связок/день</li>
         </ul>
-        <button className="pricing-btn">Приобрести</button>
+        <LinkedButton content={"Приобрести"} path={""}/>
       </div>
       <div className="pricing-card">
         <h3>Продвинутый тариф</h3>
@@ -26,7 +28,7 @@ export default function PriceList(){
           <li>✓ Связки с хэджированием</li>
           <li>✓ Фильтрация связок</li>
         </ul>
-        <button className="pricing-btn">Приобрести</button>
+        <LinkedButton content={"Приобрести"} path={""}/>
       </div>
     </div>
   );

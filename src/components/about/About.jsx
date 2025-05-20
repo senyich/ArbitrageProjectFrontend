@@ -1,3 +1,4 @@
+import React from "react"
 import { useEffect } from 'react';
 import './About.css';
 import ExchangeList from '../exchanges/ExchangeList';
@@ -12,11 +13,9 @@ export default function About() {
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.about-section').forEach(section => {
       observer.observe(section);
     });
-
     return () => observer.disconnect();
   }, []);
   return (

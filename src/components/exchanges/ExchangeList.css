@@ -1,0 +1,55 @@
+.exchange-section {
+  padding: 40px 0;
+}
+
+.exchange-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #a8ffbf;
+  margin-bottom: 30px;
+  text-shadow: 0 0 6px rgba(0, 255, 128, 0.3);
+}
+
+.exchange-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.exchange-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #11291f;
+  border: 1px solid #1a3b2f;
+  padding: 16px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #c8f9dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exchange-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px #00ff88;
+}
+
+.exchange-number {
+  font-weight: bold;
+  color: #7fffd4;
+}
+
+.exchange-name {
+  flex: 1;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.exchange-icon {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #7fffd4;
+  stroke-width: 2;
+  transition: stroke 0.3s;
+}
