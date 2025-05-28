@@ -1,0 +1,65 @@
+.auth-wrapper {
+  max-width: 600px;
+  margin: 80px auto;
+  background-color: #10271f;
+  border-radius: 16px;
+  border: 1px solid #1a3b2f;
+  box-shadow: 0 0 18px rgba(0, 255, 128, 0.1);
+  padding: 30px 20px;
+  color: #c8f9dc;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.auth-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tab-btn {
+  background: none;
+  border: 1px solid rgba(0, 255, 128, 0.2);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #a8ffbf;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 0 1px rgba(0, 255, 128, 0.2);
+}
+
+.tab-btn:hover {
+  background-color: rgba(0, 255, 128, 0.15);
+  box-shadow: 0 0 6px rgba(0, 255, 128, 0.3);
+}
+
+.tab-btn.active {
+  background-color: rgba(0, 255, 128, 0.25);
+  color: #ffffff;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.auth-form-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.auth-form-container {
+  position: relative;
+  width: 100%;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

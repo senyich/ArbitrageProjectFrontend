@@ -1,7 +1,8 @@
-import React from "react"
 import { Link } from "react-router-dom"
 import LinkedButton from "../linked-button/LinkedButton"
+import React from "react"
 import "./CustomHeader.css"
+
 export default function CustomHeader() {
   return (
     <header className="header">
