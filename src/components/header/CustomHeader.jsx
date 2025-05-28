@@ -12,7 +12,7 @@ export default function CustomHeader() {
         </div>
         <ul className="nav-link-list">
           <li><LinkedButton content={"Главная"} path="/"/></li>
-          <li><LinkedButton content={"Личный кабинет"} path="/account"/></li>
+          <li><LinkedButton content={"Личный кабинет"} path="/auth"/></li>
         </ul>
       </nav>
     </header>

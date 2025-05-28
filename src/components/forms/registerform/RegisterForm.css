@@ -35,13 +35,19 @@
   background-color: #0e2e22;
   color: #c8f9dc;
   font-size: 1rem;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .register-form input:focus {
   outline: none;
   box-shadow: 0 0 10px rgba(0, 255, 128, 0.4);
   border-color: #00ff88;
+}
+
+.register-form input:disabled {
+  background-color: #0a2319;
+  color: #7fa894;
+  cursor: not-allowed;
 }
 
 .register-form button {
@@ -54,14 +60,51 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   box-shadow: inset 0 0 0 1px rgba(0, 255, 128, 0.3);
+  position: relative;
+  overflow: hidden;
 }
 
-.register-form button:hover {
+.register-form button:hover:not(:disabled) {
   background-color: rgba(0, 255, 128, 0.35);
-  box-shadow: 0 0 10px #00ff88;
+  box-shadow: 0 0 15px rgba(0, 255, 128, 0.5);
   color: #ffffff;
+}
+
+.register-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.register-form button.loading {
+  color: transparent;
+}
+
+.register-form button.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 3px solid rgba(170, 255, 198, 0.3);
+  border-top-color: #9effa7;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.error-message {
+  background-color: rgba(220, 53, 69, 0.15);
+  color: #ff9e9e;
+  padding: 12px 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 158, 158, 0.3);
+  box-shadow: 0 0 8px rgba(220, 53, 69, 0.2);
+  animation: shake 0.5s ease;
 }
 
 @keyframes glowIn {
@@ -77,12 +120,34 @@
   }
 }
 
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
 @media (max-width: 600px) {
   .register-container {
     padding: 25px;
+    margin: 30px 15px;
   }
 
   .register-form h2 {
     font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .register-form input {
+    padding: 10px 12px;
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    padding: 10px 12px;
+    font-size: 0.85rem;
   }
 }

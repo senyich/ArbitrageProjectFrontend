@@ -13,7 +13,7 @@ export default function App() {
       <main className="main-content">
         <Routes>
           <Route index element={<MainPage/>} />
-          <Route path='/account' element={<AuthPage/>} />
+          <Route path='/auth' element={<AuthPage/>} />
         </Routes>
       </main>
       <CustomFooter /> 
