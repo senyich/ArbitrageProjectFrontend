@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
-import CustomFooter from './components/footer/CustomFooter';
-import CustomHeader from './components/header/CustomHeader';
-import MainPage from './pages/main/MainPage';
-import AuthPage from './pages/authpage/AuthPage';
+import CustomFooter from './components/CustomFooter';
+import CustomHeader from './components/CustomHeader';
+import AccountPage from './pages/AccountPage'
+import MainPage from './pages/MainPage';
+import AuthPage from './pages/AuthPage';
 import React from 'react';
 
 export default function App() {
@@ -14,6 +14,7 @@ export default function App() {
         <Routes>
           <Route index element={<MainPage/>} />
           <Route path='/auth' element={<AuthPage/>} />
+          <Route path='/account' element={<AccountPage/>} />
         </Routes>
       </main>
       <CustomFooter /> 

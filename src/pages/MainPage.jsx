@@ -1,6 +1,5 @@
-import "./MainPage.css"
-import About from "../../components/about/About"
-import HomeLabel from "../../components/home-label/HomeLabel"
+import About from "../components/About"
+import HomeLabel from "../components/HomeLabel"
 import React from "react"
 
 export default function MainPage(){
